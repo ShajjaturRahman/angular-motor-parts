@@ -2,10 +2,34 @@
 	<h1>Products</h1>
 
 	<form>
-		<input type="text" placeholder="Add New Product" name="userTypedProductName" [(ngModel)]="userTypedProductName">
-		<input type="text" placeholder="Product Price" name="userTypedProductPrice" [(ngModel)]="userTypedProductPrice">
-		<input type="text" placeholder="Product Stock" name="userTypedProductStock" [(ngModel)]="userTypedProductStock">
-    <input type="file" name="product_img" accept="image/*" [(ngModel)]="productImageFile" (change)="getProductImageDetails($event)">
+		<input
+      type="text"
+      autocomplete="off"
+      placeholder="Product Name"
+      name="userTypedProductName"
+      [(ngModel)]="userTypedProductName"
+      >
+      <input
+      type="text"
+      autocomplete="off"
+      placeholder="Product Price"
+      name="userTypedProductPrice"
+      [(ngModel)]="userTypedProductPrice"
+      >
+      <input
+      type="text"
+      autocomplete="off"
+      placeholder="Product Stock"
+      name="userTypedProductStock"
+      [(ngModel)]="userTypedProductStock"
+    >
+    <input
+      type="file"
+      name="product_img"
+      accept="image/*"
+      [(ngModel)]="productImageFile"
+      (change)="getProductImageDetails($event)"
+    >
 		<button type="submit" *ngIf="updateStatus == false" (click)="addProduct()">Add</button>
 		<button type="submit" *ngIf="updateStatus == true" (click)="updateProduct()">Update</button>
 	</form>
@@ -19,4 +43,7 @@
 		<button (click)="changeUpdateStatus(eachProduct)">Edit</button>
 		<button (click)="deleteProduct(eachProduct.id)">Delete</button>
 	</div>
+
+  <br>
+  <br>
 </div>

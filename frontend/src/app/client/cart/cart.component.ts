@@ -36,8 +36,12 @@ export class CartComponent implements OnInit {
 
   removeFromCart(removedProductId: any){
     this.orderList = this.orderList.filter(each => each.id !== removedProductId)
-    this.totalAmount = this.orderList.reduce((acc: any, next: any) => acc + next.price, 0)
     localStorage.setItem("cartdetails", JSON.stringify(this.orderList))
+
+    this.totalAmount = 0
+    this.orderList.forEach((each: any)  => {
+      this.totalAmount = this.totalAmount + each.price
+    });
 
     let products: any = localStorage.getItem("products")
     products = JSON.parse(products)
