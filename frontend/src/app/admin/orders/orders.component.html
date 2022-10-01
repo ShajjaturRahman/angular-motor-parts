@@ -1,0 +1,29 @@
+<div class="order__wrapper">
+  <div class="order__box">
+    <table class="order-table__wrapper">
+      <thead class="order-table__head">
+        <tr class="order-table__item-wrapper">
+          <th class="order-table__items">User</th>
+          <th class="order-table__items">Contact No</th>
+          <th class="order-table__items">Delivery Location</th>
+          <th class="order-table__items">Product</th>
+          <th class="order-table__items">Price</th>
+          <th class="order-table__items">Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="order-table__item-wrapper"
+          *ngFor="let eachOrder of orderList"
+        >
+          <td class="order-table__items">{{ eachOrder.customer_name }}</td>
+          <td class="order-table__items">{{ eachOrder.contact }}</td>
+          <td class="order-table__items">{{ eachOrder.delivery_address }}</td>
+          <td class="order-table__items">{{ eachOrder.name }}</td>
+          <td class="order-table__items">{{ eachOrder.price }}</td>
+          <td class="order-table__items">{{ eachOrder.purchased_date }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

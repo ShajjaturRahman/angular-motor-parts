@@ -1,0 +1,38 @@
+<div class="order__wrapper">
+  <div class="order__box">
+	<div class="checkout-input__group">
+		<input class="checkout-input__items" type="text" placeholder="Name" [(ngModel)]="nameField" />
+		<input class="checkout-input__items" type="text" placeholder="Contact No" [(ngModel)]="contactField" />
+		<input
+			class="checkout-input__items"
+			type="text"
+			placeholder="Delivery Address"
+			[(ngModel)]="addressField"
+		/>
+	</div>
+
+    <table class="checkout-table__wrapper">
+      <thead class="checkout-table__head">
+        <tr class="checkout-table__item-wrapper">
+          <th class="checkout-table__items">Product Name</th>
+          <th class="checkout-table__items">Product Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="checkout-table__item-wrapper"
+          *ngFor="let eachOrder of orderList"
+        >
+          <td class="checkout-table__items">{{ eachOrder.name }}</td>
+          <td class="checkout-table__items">{{ eachOrder.price }}</td>
+        </tr>
+        <tr class="checkout-table__item-wrapper">
+          <td class="checkout-table__items">Total</td>
+          <td class="checkout-table__items">{{ totalAmount }} Taka</td>
+        </tr>
+      </tbody>
+    </table>
+
+	<button class="checkout-table__checkout-btn" (click)="placeOrder()">Place Order</button>
+  </div>
+</div>

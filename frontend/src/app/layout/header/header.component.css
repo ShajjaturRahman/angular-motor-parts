@@ -1,0 +1,73 @@
+.header__container{
+	height: 5rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.header__wrapper{
+	margin: 0 5rem;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.header__logo{
+	margin-left: 0.5rem;
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.header__reset-link{
+	text-decoration: none;
+	color: black;
+}
+
+.header__searchbar-wrapper{
+	margin-right: auto;
+	margin-left: auto;
+	height: 2.5rem;
+	width: 30rem;
+	border: 1px solid black;
+	border-radius: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.header__searchbar{
+	outline: none;
+	border: none;
+	margin: 0.1rem 0 0 0.5rem;
+	height: 2rem;
+	width: 25rem;
+}
+
+.reset-btn-style{
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.header__searchicon{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.header__wishlist-icon{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.header__cart-icon{
+	height: 1.5rem;
+	width: 1.5rem;
+}
+
+.header__icons{
+	margin: 0 0.5rem;
+	display: flex;
+	align-self: center;
+}

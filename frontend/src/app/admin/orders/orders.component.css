@@ -1,0 +1,69 @@
+.order__wrapper{
+	height: calc(100vh - 4rem);
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+.order__box{
+	margin: 1rem 0;
+	padding: 1rem;
+	min-height: 10rem;
+	height: max-content;
+	width: 70vw;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 0.3rem;
+}
+
+.order-table__wrapper{
+	display: flex;
+	flex-direction: column;
+}
+
+.order-table__item-wrapper{
+	display: flex;
+	text-align: center;
+	padding: 0.5rem 0;
+}
+
+.order-table__items{
+	flex: 1;
+	line-height: 2.5rem;
+}
+
+.order-table__head{
+	background-color: rgb(4, 109, 170);
+	color: white;
+	height: 3rem;
+	line-height: 2rem;
+	width: 100%;
+}
+
+.order-table__btn{
+	border: none;
+	outline: none;
+	background: rgb(226, 67, 67);
+	color: white;
+	padding: 0.5rem 1rem;
+	border-radius: 0.2rem;
+	cursor: pointer;
+}
+
+.order-table__btn:hover{
+	background: rgb(192, 34, 34);
+}
+
+.order-table__checkout-btn{
+	border: none;
+	outline: none;
+	width: 100%;
+	height: 2.5rem;
+	background-color: rgb(4, 155, 79);
+	color: white;
+	border-radius: 0.3rem;
+	cursor: pointer;
+}
+
+.order-table__checkout-btn:hover{
+	background-color: rgb(1, 129, 65);
+}

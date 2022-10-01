@@ -1,0 +1,30 @@
+<div class="register__wrapper">
+  <div class="register__box">
+    <h1 class="register__box-title">Register</h1>
+    <input 
+		class="register__box-input" 
+		type="text" 
+		placeholder="Username" 
+		[(ngModel)]="usernameField"
+	/>
+    <input 
+		class="register__box-input" 
+		type="password" 
+		placeholder="Password" 
+		[(ngModel)]="passwordField"
+	/>
+
+	<button class="register__box-btn" (click)="registerNewAccount()">
+		Register
+	</button>
+
+    <!-- <a class="register__box-btn-link" href="user/login">
+      <button class="register__box-btn" (click)="registerNewAccount()">
+        Register
+      </button>
+    </a> -->
+    <a class="register__box-link" href="user/login"
+      >Already Have An Account? Login !</a
+    >
+  </div>
+</div>

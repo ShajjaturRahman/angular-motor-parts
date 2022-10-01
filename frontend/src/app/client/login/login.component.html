@@ -1,0 +1,19 @@
+<div class="login__wrapper">
+	<div class="login__box">
+		<h1 class="login__box-title">Login</h1>
+		<input 
+			class="login__box-input" 
+			type="text" 
+			placeholder="Username"
+			[(ngModel)]="usernameField"
+		>
+		<input 
+			class="login__box-input" 
+			type="password" 
+			placeholder="Password"
+			[(ngModel)]="passwordField"
+		>
+		<button class="login__box-btn" (click)="checkAuthentication()">Login</button>
+		<a class="login__box-link" href="user/register">Create New Account</a>
+	</div>
+</div>

@@ -1,0 +1,9 @@
+.related-products__header-wrapper{
+	display: flex;
+	justify-content: center;
+}
+
+.related-products__header-title{
+	font-size: 2.5rem;
+	display: flex;
+}

@@ -1,0 +1,64 @@
+.register__wrapper{
+	height: calc(100vh - 4rem);
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(240, 240, 240);
+}
+
+.register__box{
+	height: 20rem;
+	width: 20rem;
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+	border-radius: 0.4rem;
+	background-color: #fff;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.register__box-title{
+	margin: 0.5 0 1rem 0;
+	padding: 0;
+	text-align: center;
+	color: rgb(35, 0, 133);
+}
+
+.register__box-input{
+	height: 3rem;
+	margin-bottom: 1rem;
+	padding-left: 1rem;
+	font-size: larger;
+	outline: none;
+	border: 1px solid rgb(46, 2, 167);
+	color: rgb(46, 2, 167);
+	border-radius: 0.3rem;
+}
+
+.register__box-input::placeholder{
+	color: rgb(46, 2, 167);
+	opacity: 0.5;
+}
+
+.register__box-btn{
+	border: none;
+	outline: none;
+	background-color: rgb(46, 2, 167);
+	color: white;
+	padding: 1rem;
+	border-radius: 0.3rem;
+	margin-bottom: 2rem;
+	cursor: pointer;
+	font-size: larger;
+	width: 100%;
+}
+
+.register__box-btn:hover{
+	background-color: rgb(35, 0, 133);
+}
+
+.register__box-btn-link{
+	text-decoration: none;
+	color: white;
+}

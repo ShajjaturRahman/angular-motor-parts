@@ -1,0 +1,22 @@
+<div>
+	<h1>Products</h1>
+
+	<form>
+		<input type="text" placeholder="Add New Product" name="userTypedProductName" [(ngModel)]="userTypedProductName">
+		<input type="text" placeholder="Product Price" name="userTypedProductPrice" [(ngModel)]="userTypedProductPrice">
+		<input type="text" placeholder="Product Stock" name="userTypedProductStock" [(ngModel)]="userTypedProductStock">
+    <input type="file" name="product_img" accept="image/*" [(ngModel)]="productImageFile" (change)="getProductImageDetails($event)">
+		<button type="submit" *ngIf="updateStatus == false" (click)="addProduct()">Add</button>
+		<button type="submit" *ngIf="updateStatus == true" (click)="updateProduct()">Update</button>
+	</form>
+
+	<div *ngFor="let eachProduct of productList">
+		<span>{{ eachProduct.name }}</span>
+		<span>-</span>
+		<span>{{ eachProduct.price }}</span>
+		<span>-</span>
+		<span>{{ eachProduct.stock }}</span>
+		<button (click)="changeUpdateStatus(eachProduct)">Edit</button>
+		<button (click)="deleteProduct(eachProduct.id)">Delete</button>
+	</div>
+</div>
